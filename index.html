@@ -1,0 +1,392 @@
+# Creating an Engaging Entertainment Page with Multimedia and CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Page</title>
+    <style>
+        /* Global styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Task 1: Interactive Navigation Links */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        /* Task 2: Eye-catching Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Task 3: Dynamic Call-to-Action Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .cta-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #007bff;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-buttons button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 5px 10px rgba(0, 91, 187, 0.3);
+        }
+
+        /* Task 4: Interactive Form for User Feedback */
+        .feedback-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-form h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .feedback-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .feedback-form input[type="text"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feedback-form input[type="text"]:focus,
+        .feedback-form textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+        }
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feedback-form button:hover {
+            background-color: #218838;
+            box-shadow: 0 5px 10px rgba(33, 136, 56, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (Task 1) -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Image Gallery (Task 2) -->
+        <section class="gallery">
+            <img src="image1.jpg" alt="Entertainment Image 1">
+            <img src="image2.jpg" alt="Entertainment Image 2">
+            <img src="image3.jpg" alt="Entertainment Image 3">
+            <img src="image4.jpg" alt="Entertainment Image 4">
+            <img src="image5.jpg" alt="Entertainment Image 5">
+        </section>
+
+        <!-- CTA Buttons (Task 3) -->
+        <div class="cta-buttons">
+            <button>Watch Now</button>
+            <button>Listen Here</button>
+            <button>Play Game</button>
+        </div>
+
+        <!-- Feedback Form (Task 4) -->
+        <section class="feedback-form">
+            <h3>Feedback Form</h3>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Leave your feedback here"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+        
+    </div>
+
+</body>
+</html>
+
+
+# Styling Forms, Lists, and Tables with CSS for Enhanced User Interfaces
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Component Styling</title>
+  <style>
+    /* General Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Task 1: User Registration Form */
+    .registration-form {
+      background-color: #fff;
+      padding: 2rem;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .registration-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .registration-form input[type="text"],
+    .registration-form input[type="email"],
+    .registration-form input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.3s;
+    }
+
+    .registration-form input[type="text"]:focus,
+    .registration-form input[type="email"]:focus,
+    .registration-form input[type="password"]:focus {
+      border-color: #007bff;
+    }
+
+    .registration-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .registration-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Task 2: Navigation Menu */
+    .nav-menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .nav-menu li {
+      margin: 0;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-menu a:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    /* Task 3: Styled Data Table */
+    .styled-table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      min-width: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .styled-table thead tr {
+      background-color: #333;
+      color: #fff;
+      text-align: left;
+    }
+
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .styled-table tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+
+    .styled-table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .styled-table tbody tr {
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: User Registration Form -->
+  <h2>User Registration</h2>
+  <form class="registration-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Task 2: Navigation Menu -->
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Task 3: Styled Data Table -->
+  <h2>Event Schedule</h2>
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Event</th>
+        <th>Location</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Team Meeting</td>
+        <td>Room A</td>
+        <td>10:00 AM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Workshop</td>
+        <td>Room B</td>
+        <td>1:00 PM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Client Presentation</td>
+        <td>Room C</td>
+        <td>3:00 PM</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
